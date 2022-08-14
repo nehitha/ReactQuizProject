@@ -10,7 +10,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run build && gh-pages -d ReactQuizProject",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace || true",
