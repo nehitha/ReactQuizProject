@@ -2,12 +2,15 @@
   "name": "build-a-quiz-component-with-react",
   "version": "0.1.1",
   "private": true,
+  "homepage": "https://nehitha.github.io/ReactQuizProject/",
   "dependencies": {
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "react-scripts": "1.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace || true",
